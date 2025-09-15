@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyslsk"
+version = "0.1.0"
+description = "A Python 3 API for Soulseek"
+authors = [{name = "Joan Gracia", email = "joangraciataribo@gmail.com"}]
+license = {text = "GPL-3.0-or-later"}
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Intended Audience :: Developers",
+    "Topic :: Internet :: File Transfer Protocol (FTP)",
+    "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://github.com/Sklyvan/pyslsk"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pyslsk*"]
